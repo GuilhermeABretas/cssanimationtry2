@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parent{
+
+    width: 500px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.336);
+    margin-top: 40px;
+}
+
+.heart{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(128, 128, 128, 0.336);
+    margin-top: 40px;
+}
+
+.div {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transition: 1s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+.n1{
+    float: left;
+    background-color: rgb(255, 198, 92);
+    clip-path: circle(100.0% at 0 0);
+}
+
+.n2{
+    float: left;
+    background-color: rgb(97, 97, 255);
+    clip-path: circle(100.0% at 100% 0);
+}
+
+.n3{
+    float: left;
+    background-color: rgb(247, 247, 79);
+    clip-path: circle(100.0% at 0 100%);
+}
+
+.n4{
+    float: left;
+    background-color: rgb(243, 107, 107);
+    clip-path: circle(100.0% at 100% 100%);
+}
+
+.parent:hover .n1{
+    animation: animacao01 alternate forwards 1.5s;
+    clip-path: circle(100.0% at 0 0);
+    z-index: 100;
+}
+
+@keyframes animacao01{
+
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(100%, 100%);
+    }
+
+}
+
+.parent:hover .n2{
+    animation: animacao02 alternate forwards 1.5s;
+    z-index: 102;
+}
+
+@keyframes animacao02{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translateY(100%)
+    }
+
+    100%{
+        transform: translate(-100%, 100%);
+    }
+}
+
+.parent:hover .n3{
+    animation: animacao03 alternate  forwards 1.5s;
+    z-index: 102;
+}
+
+@keyframes animacao03{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translateY(-100%)
+    }
+
+    100%{
+        transform: translate(100%, -100%);
+    }
+
+}
+
+.parent:hover .n4{
+    animation: animacao04 alternate forwards 1.5s ;
+    z-index: 102;
+}
+
+@keyframes animacao04{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translatex(-100%)
+    }
+
+    100%{
+        transform: translate(-100%, -100%);
+    }
+
+}
+
+
+/* segunda caixa de animação */
+
+
+.a1{
+    float: left;
+    background-color: rgb(255, 198, 92);
+
+}
+
+.a2{
+    float: left;
+    background-color: rgb(97, 97, 255);
+
+}
+
+.a3{
+    float: left;
+    background-color: rgb(247, 247, 79);
+
+}
+
+.a4{
+    float: left;
+    background-color: rgb(243, 107, 107);
+}
+
+
+.parent:hover .a1{
+    animation: animacao001 alternate forwards 1.5s;
+    z-index: 100;
+}
+
+@keyframes animacao001{
+
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translate(100%, 100%);
+    }
+
+}
+
+.parent:hover .a2{
+    animation: animacao002 alternate forwards 1.5s;
+    z-index: 102;
+}
+
+@keyframes animacao002{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translateY(100%)
+    }
+
+    100%{
+        transform: translate(-100%, 100%);
+    }
+}
+
+.parent:hover .a3{
+    animation: animacao003 alternate  forwards 1.5s;
+    z-index: 102;
+}
+
+@keyframes animacao003{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translateY(-100%)
+    }
+
+    100%{
+        transform: translate(100%, -100%);
+    }
+
+}
+
+.parent:hover .a4{
+    animation: animacao004 alternate forwards 1.5s ;
+    z-index: 102;
+}
+
+@keyframes animacao004{
+
+    0%{
+     transform: translateX(0%);
+
+    }
+    50%{
+        transform: translatex(-100%)
+    }
+
+    100%{
+        transform: translate(-100%, -100%);
+    }
+
+}
